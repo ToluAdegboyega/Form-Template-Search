@@ -1,0 +1,31 @@
+.person {
+    display: flex-column;
+    background: white;
+    width: 300px;
+    box-shadow: 7px 10px 12px -5px rgba(131, 26, 26, 0.56);
+    padding: 10px;
+    margin: 20px;
+    border-radius: 15px;
+}
+  
+.person-details {
+    font-weight: bold;
+    color: black;
+    display: flex;
+}
+  
+.person-name {
+    font-size: 15px;
+    text-align: left;
+    width: 50%;
+}
+
+.person-category {
+    display: flex;
+}
+  
+ 
+.person:hover {
+    transform: scale(1.05);
+}
+  
