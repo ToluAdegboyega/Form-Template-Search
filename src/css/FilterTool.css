@@ -1,0 +1,31 @@
+.form-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    .form-wrapper {
+        flex-direction: column;
+    }
+}
+
+.FilterTool {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.form-select {
+    border: none;
+    margin-left: 20px;
+}
+
+.form-select:active {
+    border: none;
+}
+
+.filter-select {
+    margin-left: 20px;
+}
