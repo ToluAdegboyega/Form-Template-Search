@@ -18,6 +18,7 @@
 
 .Loading-screen-text {
     margin-left: 20px;
+    font-family: 'Ubuntu Condensed', sans-serif;
 }
   
 .FilterTool {
@@ -42,8 +43,11 @@
   
 .search-button {
     background: rgba(13, 49, 170, 0.829);
+    font-size: 16px;
+    font-weight: 500;
     border: none;
     padding: 10px 20px;
     color: white;
     cursor: pointer;
+    font-family: inherit;
 }
