@@ -1,31 +1,39 @@
 .form-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin-left: 50px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
     .form-wrapper {
         flex-direction: column;
+        justify-content: center;
     }
 }
 
 .FilterTool {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    margin: 50px;
+    margin: 20px;
 }
 
 .form-select {
     border: none;
     margin-left: 20px;
-}
-
-.form-select:active {
-    border: none;
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: 300;
 }
 
 .filter-select {
     margin-left: 20px;
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.label {
+    font-weight: 500;
 }
