@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Card from '../Card/Card';
 import '../../css/Templates.css';
-import { sortByNameAZ, sortByNameZA, sortByDateAZ, sortByDateZA } from "./extra/sortByNameAndCategory";
+import { sortByNameAZ, sortByNameZA} from "./extra/sortByNameAndDate";
 import Pagination from "../Pagination/Pagination";
 import FilterTool from "../FilterTool/FilterTool";
 import Loading from "../Loading/Loading";
@@ -20,7 +20,6 @@ function Templates() {
   const [postsPerPage] = useState(300);
   const [currCategory, setCategory] = useState("All");
   const [sortType, setSortType] = useState("A-Z");
-  const [sortDateType, setSortDateType] = useState("A-Z");
   const [search, setSearch] = useState('');
   const [query, setQuery] = useState('');
   
@@ -38,8 +37,7 @@ function Templates() {
         .then(
           result => {
             setIsLoaded(true);
-            sortType === "A-Z" ? sortByNameAZ(result) : sortByNameZA(result);
-            sortDateType === "A-Z" ? sortByDateAZ(result) : sortByDateZA(result);
+            sortType === "A-Z" ? sortByNameAZ(result): sortByNameZA(result);
             setItems(
               currCategory === "All" 
                 ? result
@@ -54,7 +52,7 @@ function Templates() {
     }
  
    filterData();
-  }, [currCategory, sortType, sortDateType, query]);
+  }, [currCategory, sortType, query]);
 
   const chooseCategory = e => {
     e.preventDefault();
@@ -69,7 +67,7 @@ function Templates() {
 
   const handleDateSort = e => {
     e.preventDefault();
-    setSortDateType(e.target.value);
+    setSortType(e.target.value);
     console.log(e.target.value);
   };
 
