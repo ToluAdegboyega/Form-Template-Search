@@ -1,4 +1,4 @@
-.person {
+.card {
     display: flex-column;
     background: white;
     width: 300px;
@@ -6,26 +6,26 @@
     padding: 10px;
     margin: 20px;
     border-radius: 15px;
+    font-weight: 500;
 }
   
-.person-details {
-    font-weight: bold;
+.card-details { 
     color: black;
     display: flex;
 }
   
-.person-name {
+.card-name {
     font-size: 15px;
     text-align: left;
     width: 50%;
 }
 
-.person-category {
+.card-category {
     display: flex;
 }
   
  
-.person:hover {
+.card:hover {
     transform: scale(1.05);
 }
   
