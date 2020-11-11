@@ -5,7 +5,7 @@ function FilterTool(props) {
   return (
     <div className="form-wrapper">
       <form className="FilterTool">
-        <label>Choose Category </label>
+        <label className="label">Choose Category </label>
         <select
           value={props.value}
           onChange={props.chooseCategory}
@@ -19,14 +19,14 @@ function FilterTool(props) {
         </select>
       </form>
       <form className="FilterTool">
-        <label>Sort Name Alphabetically </label>
+        <label className="label">Sort Name</label>
         <select value={props.value} onChange={props.handleSort} title="select" className="filter-select">
           <option value="A-Z">Ascending - Descending </option>
           <option value="Z-A">Descending - Ascending</option>
         </select>
       </form>
       <form className="FilterTool">
-        <label>Sort Date</label>
+        <label className="label">Sort Date</label>
         <select value={props.value} onChange={props.handleDateSort} title="select" className="filter-select">
           <option value="A-Z">Ascending - Descending</option>
           <option value="Z-A">Descending - Ascending</option>
