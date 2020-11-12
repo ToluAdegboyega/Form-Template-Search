@@ -10,6 +10,7 @@ require('es6-promise').polyfill();
 require('isomorphic-fetch');
 
 const API_URL = "https://front-end-task-dot-fpls-dev.uc.r.appspot.com/api/v1/public/task_templates";
+// "proxy": "https://front-end-task-dot-fpls-dev.uc.r.appspot.com/",
 
 
 function Templates() {
@@ -32,7 +33,7 @@ function Templates() {
 
   useEffect(() => {
     async function filterData() {
-      fetch('api/v1/public/task_templates')
+      fetch(API_URL)
         .then(res => res.json())
         .then(
           result => {
