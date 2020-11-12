@@ -32,7 +32,7 @@ function Templates() {
 
   useEffect(() => {
     async function filterData() {
-      fetch(API_URL)
+      fetch('api/v1/public/task_templates')
         .then(res => res.json())
         .then(
           result => {
