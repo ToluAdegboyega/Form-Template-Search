@@ -4,3 +4,5 @@ Due to time constraints, it isn't a 100% ready, but I will continue to work on i
 
 Please reach out if you would like to ask any questions on what I have done so far.
 Looking forward to hearing from you.
+
+P.S.: Running into CORS problems with the API. This affects rendering when the sorting feature is used.
